@@ -1,7 +1,7 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/" },
-      { "src": "/dashboard", "dest": "/dashboard" },
-      { "src": "/previewDashboard/*", "dest": "/previewDashboard/*" }
-    ]
-}  
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/dashboard", "destination": "/dashboard" },
+    { "source": "/previewDashboard/(.*)", "destination": "/previewDashboard/$1" }
+  ]
+}
