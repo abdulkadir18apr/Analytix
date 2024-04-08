@@ -1,0 +1,40 @@
+/* FancyLoader.css */
+.fancy-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loader-circle {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+  
+  .loader-circle:nth-child(1) {
+    border-top: 2px solid #3498db;
+  }
+  
+  .loader-circle:nth-child(2) {
+    border-top: 2px solid #e74c3c;
+  }
+  
+  .loader-circle:nth-child(3) {
+    border-top: 2px solid #2ecc71;
+  }
+  
+  .loader-circle:nth-child(4) {
+    border-top: 2px solid #f39c12;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

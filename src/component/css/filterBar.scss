@@ -1,0 +1,109 @@
+.filterBarContainer{
+    display:flex;
+    flex-direction: column; //mobile
+    justify-content: space-evenly;
+    gap: 1rem; //mobile
+    border: 2;
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    background-color: #ffedd5;
+    .filterBtn{
+      
+        button{
+            background-color: transparent;
+            border: none;
+            color: green;
+            cursor: pointer;
+        }
+
+    }
+    .filters{
+        display :flex ;
+        flex-direction: column;  //mobile   
+        justify-content: center;
+        align-items: center; //mobile
+        gap: 1rem;
+        width:40%;
+        .age{
+            display: flex;
+            gap:10px;
+            
+        }
+        .gender{
+            display: flex;
+            gap: 10px;
+        }
+        .filterBtns{
+            padding: 10px;
+            background-color: transparent;
+            color: #052e16;
+            font-weight: 600;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .active{
+            background-color: #fcd34d;
+        }
+        .menu{
+
+        }
+    }
+    .hide{
+        display: none; //mobile
+    }
+}
+
+
+.shareButton,
+.logoutButton {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3;
+}
+.shareButton:hover,
+.logoutButton:hover {
+  background-color: #0056b3; 
+}
+
+
+.logoutButton {
+  margin-left: 10px;
+}
+
+
+.logoutButton {
+  background-color: #dc3545; 
+}
+
+
+@media (max-width: 600px) {
+  .shareButton,
+  .logoutButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+@media screen and (min-width:1080px) {
+    .filterBarContainer{
+        flex-direction: row;
+        gap: 0rem;
+        align-items: center;
+        .filters{
+            flex-direction: row;  //tab   
+            justify-content: space-evenly
+        }
+        .hide{
+            display: flex;
+        }
+    }
+    
+}
