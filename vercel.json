@@ -3,6 +3,5 @@
     { "src": "/", "dest": "/" },
     { "src": "/dashboard", "dest": "/dashboard" }
     { "src": "/previewDashboard/*", "dest": "/previewDashboard/*" }
-    // ....
   ]
 }
