@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/dashboard"
+  status = 200
+
+[[redirects]]
+  from = "/previewDashboard/*"
+  to = "/previewDashboard/:splat"
+  status = 200
